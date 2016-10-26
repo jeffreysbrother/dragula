@@ -1,13 +1,14 @@
 'use strict';
 
-var sortable = document.getElementById('sortable');
+// var sortable = document.getElementById('sortable');
 
 // THIS IS WHERE COPYING IS ENABLED
 dragula([document.getElementById('left-copy'), document.getElementById('right-copy')], {
   copy: true,
-  removeOnSpill: true,
+  revertOnSpill: true,
   copySortSource: true
 })
-.on('drop', function (el) {
-  el.className += ' ex-moved';
-});
+    // this will do the color stuff
+// .on('drop', function (el) {
+//   el.className += ' ex-moved';
+// });
