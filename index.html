@@ -11,6 +11,8 @@
 <h3>Find the original project on GitHub <a href='https://github.com/bevacqua/dragula'>bevacqua/dragula</a>. This a fork. I'm basically just screwing around with the code and trying to figure out how to use the Dragula library. I did not create this.</h3>
 
 <div class='examples'>
+
+
   <div class='parent'>
     <label for='hy'>Move stuff between these two containers. Note how the stuff gets inserted near the mouse pointer? Great stuff.</label>
     <div class='wrapper'>
@@ -31,10 +33,12 @@
     </div>
     <pre>
       <code>
-dragula([document.getElementById(left), document.getElementById(right)]);
+        dragula([document.getElementById(left), document.getElementById(right)]);
       </code>
     </pre>
   </div>
+
+
   <div class='parent'>
     <label for='hy'>There are plenty of events along the lifetime of a drag event. Check out <a href='https://github.com/bevacqua/dragula#drakeon-events'>all of them</a> in the docs!</label>
     <div class='wrapper'>
@@ -53,19 +57,21 @@ dragula([document.getElementById(left), document.getElementById(right)]);
     </div>
     <pre>
       <code>
-dragula([document.getElementById(left), document.getElementById(right)])
-  .on('drag', function (el) {
-    el.className = el.className.replace('ex-moved', '');
-  }).on('drop', function (el) {
-    el.className += ' ex-moved';
-  }).on('over', function (el, container) {
-    container.className += ' ex-over';
-  }).on('out', function (el, container) {
-    container.className = container.className.replace('ex-over', '');
-  });
+        dragula([document.getElementById(left), document.getElementById(right)])
+          .on('drag', function (el) {
+            el.className = el.className.replace('ex-moved', '');
+          }).on('drop', function (el) {
+            el.className += ' ex-moved';
+          }).on('over', function (el, container) {
+            container.className += ' ex-over';
+          }).on('out', function (el, container) {
+            container.className = container.className.replace('ex-over', '');
+          });
       </code>
     </pre>
   </div>
+
+
   <div class='parent'>
     <label for='hy'>Need to be able to quickly delete stuff when it spills out of the chosen containers? Note how you can easily sort the items in any containers by just dragging and dropping.</label>
     <div class='wrapper'>
@@ -84,12 +90,14 @@ dragula([document.getElementById(left), document.getElementById(right)])
     </div>
     <pre>
       <code>
-dragula([document.getElementById(single)], {
-  removeOnSpill: true
-});
+        dragula([document.getElementById(single)], {
+          removeOnSpill: true
+        });
       </code>
     </pre>
   </div>
+
+
   <div class='parent'>
     <label for='hy'>By default, dropping an element outside of any known containers will keep the element in the last place it went over. You can make elements go back to origin if they're dropped outside of known containers, too.</label>
     <div class='wrapper'>
@@ -105,12 +113,14 @@ dragula([document.getElementById(single)], {
     </div>
     <pre>
       <code>
-dragula([document.getElementById(left), document.getElementById(right)], {
-  revertOnSpill: true
-});
+        dragula([document.getElementById(left), document.getElementById(right)], {
+          revertOnSpill: true
+        });
       </code>
     </pre>
   </div>
+
+
   <div class='parent'>
     <label for='hy'>Copying stuff is common too, so we made it easy for you.</label>
     <div class='wrapper'>
@@ -126,12 +136,15 @@ dragula([document.getElementById(left), document.getElementById(right)], {
     </div>
     <pre>
       <code>
-dragula([document.getElementById(left), document.getElementById(right)], {
-  copy: true
-});
+        dragula([document.getElementById(left), document.getElementById(right)], {
+          copy: true
+        });
       </code>
     </pre>
   </div>
+
+
+
   <div class='parent'>
     <label for='hy'>Copying stuff from only one of the containers and sorting on the other one? No problem!</label>
     <div class='wrapper'>
@@ -147,17 +160,19 @@ dragula([document.getElementById(left), document.getElementById(right)], {
     </div>
     <pre>
       <code>
-dragula([document.getElementById(left), document.getElementById(right)], {
-  copy: function (el, source) {
-    return source === document.getElementById(left)
-  },
-  accepts: function (el, target) {
-    return target !== document.getElementById(left)
-  }
-});
+        dragula([document.getElementById(left), document.getElementById(right)], {
+          copy: function (el, source) {
+            return source === document.getElementById(left)
+          },
+          accepts: function (el, target) {
+            return target !== document.getElementById(left)
+          }
+        });
       </code>
     </pre>
   </div>
+
+
   <div class='parent'>
     <label for='hy'>Drag handles float your cruise?</label>
     <div class='wrapper'>
@@ -172,15 +187,17 @@ dragula([document.getElementById(left), document.getElementById(right)], {
     </div>
     <pre>
       <code>
-dragula([document.getElementById(left), document.getElementById(right)], {
-  moves: function (el, container, handle) {
-    return handle.className === 'handle';
-  }
-});
+        dragula([document.getElementById(left), document.getElementById(right)], {
+          moves: function (el, container, handle) {
+            return handle.className === 'handle';
+          }
+        });
       </code>
     </pre>
     <div>There are a few similar mechanisms to determine whether an element can be dragged from a certain container <a href='https://github.com/bevacqua/dragula#optionsmoves'>(<code>moves</code>)</a>, whether an element can be dropped into a certain container at a certain position <a href='https://github.com/bevacqua/dragula#optionsaccepts'>(<code>accepts</code>)</a>, and whether an element is able to originate a drag event <a href='https://github.com/bevacqua/dragula#optionsinvalid'>(<code>invalid</code>)</a>.</div>
   </div>
+
+
   <div class='parent'>
     <label><strong>Click or Drag!</strong> Fires a click when the mouse button is released before a <code>mousemove</code> event, otherwise a drag event is fired. No extra configuration is necessary.</label>
     <div class='wrapper'>
@@ -199,7 +216,9 @@ dragula([document.getElementById(left), document.getElementById(right)], {
       </code>
     </pre>
   </div>
-</div>
+
+
+</div> <!-- end of "examples" div -->
 
 <!-- adding Dragula JS via npm (not sure why there is dragula/example distinction)-->
 <!-- OH, maybe the example file is where dragula is initialized and configured to work with project-specific classes, etc -->
