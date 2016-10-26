@@ -1,5 +1,5 @@
 'use strict';
 
-dragula([document.getElementById('left-copy'), document.getElementById('right-copy')], {
+dragula([document.getElementById('le'), document.getElementById('ri')], {
   copy: true
 });
