@@ -1,23 +1,3 @@
-[![logo.png][3]][2]
-
-[![Travis CI][5]][4] [![Slack Status][17]][18] [![Support](https://supporter.60devs.com/api/b/f4co3kmopd9mngbzjgn6ymbug)](https://supporter.60devs.com/give/f4co3kmopd9mngbzjgn6ymbug) [![Patreon][19]][20]
-
-> Drag and drop so simple it hurts
-
-Browser support includes every sane browser and **IE7+**. <sub>_(Granted you polyfill the functional `Array` methods in ES5)_</sub>
-
-Framework support includes vanilla JavaScript, Angular, and React.
-
-- Official [Angular bridge][8] for `dragula` [_(demo)_][10]
-- Official [Angular 2 bridge][22] for `dragula` [_(demo)_][23]
-- Official [React bridge][9] for `dragula` [_(demo)_][11]
-
-# Demo
-
-[![demo.png][1]][2]
-
-Try out the [demo][2]!
-
 # Inspiration
 
 Have you ever wanted a drag and drop library that just works? That doesn't just depend on bloated frameworks, that has great support? That actually understands where to place the elements when they are dropped? That doesn't need you to do a zillion things to get it to work? Well, so did I!
