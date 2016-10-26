@@ -1,0 +1,1 @@
+This is an example of [Dragula](https://github.com/bevacqua/dragula) in action. The `index.html` file is a near clone of the example provided in the Dragula docs. The only difference is that I used npm to install the CSS and JS files.
