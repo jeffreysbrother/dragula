@@ -1,1 +1,3 @@
 This is an example of [Dragula](https://github.com/bevacqua/dragula) in action. The `index.html` file is a near clone of the example provided in the Dragula docs. The only difference is that I used npm to install the CSS and JS files.
+
+I also moved the project-specific CSS and JS (`example.css` and `example.js`) from the node_modules directory to the project root. Since I am not using crossvent (whatever that is), I commented out this line in `example.js`. My reasoning behind doing this is that I want to modify the project-specific JavaScript. If these changes are made to the file in node_modules, the updates will not be tracked by Git.

@@ -1,19 +1,19 @@
 <!doctype html>
 <meta charset='utf-8'>
-<link rel="shortcut icon" href="favicon.ico">
+<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 
 <!-- adding Dragula core and project-specific CSS via npm -->
 <link rel="stylesheet" href="node_modules/dragula/dist/dragula.min.css">
-<link rel="stylesheet" href="node_modules/dragula/example/example.css">
+<link rel="stylesheet" href="example.css">
 
 <title>dragula</title>
 
-<h3>Find the original project on GitHub <a href='https://github.com/bevacqua/dragula'>bevacqua/dragula</a>. This a fork. I'm basically just screwing around with the code and trying to figure out how to use the Dragula library. I did not create this.</h3>
+<h3><a href='https://github.com/bevacqua/dragula' target="_blank">Dragula</a> in action.</h3>
 
 <div class='examples'>
 
 
-  <div class='parent'>
+  <!-- <div class='parent'>
     <label for='hy'>Move stuff between these two containers. Note how the stuff gets inserted near the mouse pointer? Great stuff.</label>
     <div class='wrapper'>
       <div id='left-defaults' class='container'>
@@ -118,11 +118,11 @@
         });
       </code>
     </pre>
-  </div>
+  </div> -->
 
 
   <div class='parent'>
-    <label for='hy'>Copying stuff is common too, so we made it easy for you.</label>
+    <label for='hy'>This is an example of the copying feature of Dragula. I commented out all the other examples because this is probably the one I will use.</label>
     <div class='wrapper'>
       <div id='left-copy' class='container'>
         <div>When elements are copyable, they can't be sorted in their origin container</div>
@@ -145,7 +145,7 @@
 
 
 
-  <div class='parent'>
+  <!-- <div class='parent'>
     <label for='hy'>Copying stuff from only one of the containers and sorting on the other one? No problem!</label>
     <div class='wrapper'>
       <div id='left-copy-1tomany' class='container'>
@@ -215,7 +215,7 @@
         dragula([document.getElementById(container)]);
       </code>
     </pre>
-  </div>
+  </div> -->
 
 
 </div> <!-- end of "examples" div -->
@@ -223,4 +223,4 @@
 <!-- adding Dragula JS via npm (not sure why there is dragula/example distinction)-->
 <!-- OH, maybe the example file is where dragula is initialized and configured to work with project-specific classes, etc -->
 <script src="node_modules/dragula/dist/dragula.min.js" charset="utf-8"></script>
-<script src="node_modules/dragula/example/example.min.js" charset="utf-8"></script>
+<script src="example.js" charset="utf-8"></script>
